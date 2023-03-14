@@ -1,4 +1,4 @@
 TASK 23:
 #!/bin/bash
-find . -empty -printf "%f\n"
+find . -empty | rev | cut | -d |'/' -f 1 | rev
 
